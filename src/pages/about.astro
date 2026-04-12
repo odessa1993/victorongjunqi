@@ -1,30 +1,31 @@
-astro---
+---
 import Layout from '../components/Layout.astro';
 ---
 <Layout title="About · Victor Ong Jun Qi">
   <main>
 
     <!-- NAV -->
-    <nav style="background:#1a3a5c;padding:0 32px;display:flex;gap:0">
-      <a href="/" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">Home</a>
-      <a href="/about" style="padding:14px 16px;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid #e8a020">About</a>
-      <a href="/blog" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">Blog</a>
-      <a href="/contact" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">Contact</a>
+    <nav style="background:#143A40;padding:0 32px;display:flex;gap:0">
+      <a href="/" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">Home</a>
+      <a href="/about" style="padding:14px 16px;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid #F2AA1B;font-family:'Lato',sans-serif">About</a>
+      <a href="/blog" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">Blog</a>
+      <a href="/contact" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">Contact</a>
     </nav>
 
     <!-- HEADER -->
-    <header style="background:#1a3a5c;padding:20px 32px;border-bottom:3px solid #e8a020;display:flex;align-items:center;gap:16px">
-<img src="/profile.jpg" alt="Victor Ong Jun Qi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #e8a020" />      <div>
-        <div style="color:#fff;font-size:18px;font-weight:500">Victor Ong Jun Qi</div>
-        <div style="color:rgba(255,255,255,0.65);font-size:12px">ICT Associate · Ministry of Education / Peicai Secondary School</div>
+    <header style="background:#143A40;padding:20px 32px;border-bottom:3px solid #F2AA1B;display:flex;align-items:center;gap:16px">
+      <img src="/profile.jpg" alt="Victor Ong Jun Qi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #F2AA1B" />
+      <div>
+        <div style="color:#fff;font-size:18px;font-weight:700;font-family:'Lato',sans-serif">Victor Ong Jun Qi</div>
+        <div style="color:rgba(255,255,255,0.65);font-size:12px;font-family:'Lato',sans-serif">ICT Associate · Ministry of Education / Peicai Secondary School</div>
       </div>
     </header>
 
     <!-- PAGE TITLE -->
     <section style="background:#f0f4f8;padding:32px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
-      <div style="font-size:11px;font-weight:500;color:#1a3a5c;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">About me</div>
-      <h1 style="font-size:28px;font-weight:500;color:#1a3a5c;margin:0">Victor Ong Jun Qi</h1>
-      <p style="font-size:14px;color:#4a6a8a;margin:6px 0 0">ICT Associate · Peicai Secondary School · Ministry of Education, Singapore</p>
+      <div style="font-size:11px;font-weight:700;color:#143A40;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;font-family:'Lato',sans-serif">About me</div>
+      <h1 style="font-size:28px;font-weight:700;color:#143A40;margin:0;font-family:'Lato',sans-serif">Victor Ong Jun Qi</h1>
+      <p style="font-size:14px;color:#4a6a8a;margin:6px 0 0;font-family:'Lato',sans-serif">ICT Associate · Peicai Secondary School · Ministry of Education, Singapore</p>
     </section>
 
     <!-- MAIN CONTENT -->
@@ -35,117 +36,5 @@ import Layout from '../components/Layout.astro';
 
         <!-- BIO -->
         <div style="margin-bottom:32px">
-          <h2 style="font-size:16px;font-weight:500;color:#1a3a5c;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #e8a020;display:inline-block">My role</h2>
-          <p style="font-size:14px;color:#444;line-height:1.8;margin:12px 0 0">I promote digital transformation by providing advice on suitable ICT tools and applications to be embedded into the school's ICT plans. I guide teachers in their adoption and use of good ICT practices, tools and applications for teaching and learning. I also support ICT infrastructure management, including putting in place essential ICT security measures, and track the usage of ICT funding to support the HOD ICT with adequate solutions to monitor its utilisation.</p>
-        </div>
-
-        <!-- WHAT I DO -->
-        <div style="margin-bottom:32px">
-          <h2 style="font-size:16px;font-weight:500;color:#1a3a5c;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e8a020;display:inline-block">Key responsibilities</h2>
-          <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
-            <div style="display:flex;gap:12px;align-items:flex-start">
-              <div style="width:8px;height:8px;border-radius:50%;background:#e8a020;flex-shrink:0;margin-top:6px"></div>
-              <div style="font-size:14px;color:#444;line-height:1.7">Advising on suitable ICT tools and applications aligned with the school's ICT plans and strategic directions</div>
-            </div>
-            <div style="display:flex;gap:12px;align-items:flex-start">
-              <div style="width:8px;height:8px;border-radius:50%;background:#e8a020;flex-shrink:0;margin-top:6px"></div>
-              <div style="font-size:14px;color:#444;line-height:1.7">Guiding teachers in adopting good ICT practices and tools for effective teaching and learning</div>
-            </div>
-            <div style="display:flex;gap:12px;align-items:flex-start">
-              <div style="width:8px;height:8px;border-radius:50%;background:#e8a020;flex-shrink:0;margin-top:6px"></div>
-              <div style="font-size:14px;color:#444;line-height:1.7">Supporting ICT infrastructure management and implementing essential ICT security measures</div>
-            </div>
-            <div style="display:flex;gap:12px;align-items:flex-start">
-              <div style="width:8px;height:8px;border-radius:50%;background:#e8a020;flex-shrink:0;margin-top:6px"></div>
-              <div style="font-size:14px;color:#444;line-height:1.7">Tracking ICT funding usage and supporting the HOD ICT with solutions to monitor utilisation</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- AREAS OF FOCUS -->
-        <div style="margin-bottom:32px">
-          <h2 style="font-size:16px;font-weight:500;color:#1a3a5c;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e8a020;display:inline-block">Areas of focus</h2>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
-            <div style="background:#e6f1fb;border-radius:8px;padding:12px 16px">
-              <div style="font-size:12px;font-weight:500;color:#0c447c">Digital Transformation</div>
-              <div style="font-size:11px;color:#185fa5;margin-top:2px">Enabling schools through technology</div>
-            </div>
-            <div style="background:#e6f1fb;border-radius:8px;padding:12px 16px">
-              <div style="font-size:12px;font-weight:500;color:#0c447c">Teacher Development</div>
-              <div style="font-size:11px;color:#185fa5;margin-top:2px">Building ICT capacity in educators</div>
-            </div>
-            <div style="background:#e6f1fb;border-radius:8px;padding:12px 16px">
-              <div style="font-size:12px;font-weight:500;color:#0c447c">ICT Infrastructure</div>
-              <div style="font-size:11px;color:#185fa5;margin-top:2px">Security & systems management</div>
-            </div>
-            <div style="background:#e6f1fb;border-radius:8px;padding:12px 16px">
-              <div style="font-size:12px;font-weight:500;color:#0c447c">EdTech Integration</div>
-              <div style="font-size:11px;color:#185fa5;margin-top:2px">Embedding tools in T&L practice</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- RIGHT COLUMN -->
-      <div>
-
-        <!-- PROFILE CARD -->
-        <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:20px;margin-bottom:16px">
-<img src="/profile.jpg" alt="Victor Ong Jun Qi" style="width:72px;height:72px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 16px;border:3px solid #e8a020" />          <div style="text-align:center">
-            <div style="font-size:14px;font-weight:500;color:#1a3a5c">Victor Ong Jun Qi</div>
-            <div style="font-size:12px;color:#666;margin-top:4px">ICT Associate</div>
-            <div style="font-size:11px;color:#888;margin-top:2px">Peicai Secondary School</div>
-            <div style="font-size:11px;color:#888">Ministry of Education, Singapore</div>
-          </div>
-          <div style="border-top:0.5px solid rgba(0,0,0,0.08);margin-top:16px;padding-top:16px;display:flex;flex-direction:column;gap:8px">
-            <div style="display:flex;justify-content:space-between;font-size:12px">
-              <span style="color:#888">Experience</span>
-              <span style="color:#1a3a5c;font-weight:500">5 years</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:12px">
-              <span style="color:#888">Sector</span>
-              <span style="color:#1a3a5c;font-weight:500">Public / Education</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:12px">
-              <span style="color:#888">Based in</span>
-              <span style="color:#1a3a5c;font-weight:500">Singapore</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SPECIALISATIONS -->
-        <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:20px;margin-bottom:16px">
-          <div style="font-size:13px;font-weight:500;color:#1a3a5c;margin-bottom:12px">Specialisations</div>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">Education Sector</span>
-            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">Public Sector</span>
-            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">ICT</span>
-            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">EdTech</span>
-            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">Digital Transformation</span>
-            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">Singapore</span>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div style="background:#1a3a5c;border-radius:12px;padding:20px;text-align:center">
-          <div style="font-size:13px;font-weight:500;color:#fff;margin-bottom:8px">Interested in collaborating?</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-bottom:16px">Open to speaking invitations and professional enquiries</div>
-          <a href="/contact" style="background:#e8a020;color:#1a3a5c;padding:9px 20px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;display:inline-block">Get in touch</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer style="background:#1a3a5c;padding:16px 32px;display:flex;justify-content:space-between;align-items:center">
-      <div style="font-size:11px;color:rgba(255,255,255,0.5)">© 2026 Victor Ong Jun Qi · ICT Associate · Ministry of Education</div>
-      <div style="display:flex;gap:16px">
-        <a href="/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none">Home</a>
-        <a href="/contact" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none">Contact</a>
-        <a href="/admin" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none">CMS</a>
-      </div>
-    </footer>
-
-  </main>
-</Layout>
+          <h2 style="font-size:16px;font-weight:700;color:#143A40;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #F2AA1B;display:inline-block;font-family:'Lato',sans-serif">My role</h2>
+          <p style="font-size:14px;color:#444;line-hei
