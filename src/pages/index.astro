@@ -1,41 +1,56 @@
 ---
 import Layout from '../components/Layout.astro';
-import Background from '../components/Background.astro';
 ---
+<Layout title="My Portfolio">
+  <main>
 
-<Layout title="Astro Quickstart">
-	<main>
-   <Background />
-    <div id="content">
-      <div class="header">
-        <h1>Quickstart Template</h1>
-        <div class="logo">
-          <img src="https://user-images.githubusercontent.com/43764894/223559085-8ff69d2f-4247-427f-a3a6-d2036b00082a.png" alt="Netlify plus Astro banner">
+    <!-- NAV -->
+    <nav style="background:#1a3a5c;padding:0 32px;display:flex;gap:0">
+      <a href="/" style="padding:14px 16px;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid #e8a020">Home</a>
+      <a href="/about" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">About</a>
+      <a href="/blog" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">Blog</a>
+      <a href="/contact" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">Contact</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header style="background:#1a3a5c;padding:20px 32px;border-bottom:3px solid #e8a020;display:flex;align-items:center;gap:16px">
+      <div style="width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500;color:#fff;flex-shrink:0">YN</div>
+      <div>
+        <div style="color:#fff;font-size:18px;font-weight:500">Your Name</div>
+        <div style="color:rgba(255,255,255,0.65);font-size:12px">Educator & Researcher · Singapore</div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section style="background:#f0f4f8;padding:48px 32px;display:flex;gap:32px;align-items:center">
+      <div style="flex:1">
+        <div style="font-size:11px;font-weight:500;color:#1a3a5c;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">Welcome</div>
+        <h1 style="font-size:32px;font-weight:500;color:#1a3a5c;line-height:1.2;margin:0 0 12px">Educator, researcher,<br>lifelong learner.</h1>
+        <p style="font-size:15px;color:#4a6a8a;margin:0 0 20px;line-height:1.6">I teach and research at my institution.<br>Passionate about making a difference in education.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px">
+          <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">Curriculum design</span>
+          <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">EdTech</span>
+          <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">Research</span>
+          <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;background:#e6f1fb;color:#0c447c">Singapore</span>
         </div>
-        <h2>
-          This is a bare-bones Astro project that has everything you need to quickly deploy it to Netlify
-        </h2>
-        <div class="btns">
-          <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-quickstart" class="btn primary">Deploy to Netlify</a>
-          <a href="https://github.com/netlify-templates/astro-quickstart" class="btn secondary">View Repo</a>
+        <div style="display:flex;gap:12px">
+          <a href="/about" style="background:#1a3a5c;color:#fff;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none">View my work</a>
+          <a href="/contact" style="background:transparent;color:#1a3a5c;border:1.5px solid #1a3a5c;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none">Contact me</a>
         </div>
       </div>
-			<div class="resource-list">
-        <ul>
-          <li>
-            <a href="https://ntl.fyi/38O9wmY">Netlify Blog: Astro posts</a>
-					</li>
-          <li>
-            <a href="https://developers.netlify.com/guides/tag/astro/">Netlify DevHub: Astro Guides</a>
-					</li>
-          <li>
-            <a href="https://ntl.fyi/3KHGtyz">Netlify Docs</a>
-          </li>
-          <li>
-            <a href="https://docs.astro.build/en/getting-started/">Astro Docs</a>
-          </li>
-        </ul>
+      <div style="width:120px;height:120px;border-radius:50%;background:#1a3a5c;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:500;color:rgba(255,255,255,0.9);flex-shrink:0;border:3px solid #e8a020">YN</div>
+    </section>
+
+    <!-- STATS -->
+    <section style="background:#1a3a5c;margin:24px 32px;border-radius:12px;padding:24px 32px;display:flex;gap:0">
+      <div style="flex:1;text-align:center">
+        <div style="font-size:24px;font-weight:500;color:#fff">10+</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px">Years teaching</div>
       </div>
-    </div>
-	</main>
-</Layout>
+      <div style="width:0.5px;background:rgba(255,255,255,0.2)"></div>
+      <div style="flex:1;text-align:center">
+        <div style="font-size:24px;font-weight:500;color:#fff">5</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px">Publications</div>
+      </div>
+      <div style="width:0.5px;background:rgba(255,255,255,0.2)"></div>
+      <div style="flex
