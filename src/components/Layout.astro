@@ -1,13 +1,10 @@
 ---
 import '../style/demo-styling.css'
-
 export interface Props {
 	title: string;
 }
-
 const { title } = Astro.props as Props;
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +12,23 @@ const { title } = Astro.props as Props;
 	<meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<title>{title}</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 	<slot />
+	<script>
+	  if (window.netlifyIdentity) {
+	    window.netlifyIdentity.on("init", user => {
+	      if (!user) {
+	        window.netlifyIdentity.on("login", () => {
+	          document.location.href = "/admin/";
+	        });
+	      }
+	    });
+	  }
+	</script>
 </body>
 </html>
-
 <style>
   :root {
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
