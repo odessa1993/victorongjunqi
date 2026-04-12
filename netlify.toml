@@ -2,3 +2,11 @@
   command = "astro build"
   functions = "netlify/functions"
   publish = "dist"
+
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks/"
+  status = 301
+
+[build.environment]
+  NODE_VERSION = "18"
