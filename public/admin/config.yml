@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/content/home.md"
+        fields:
+          - { label: "Your Name", name: "name", widget: "string" }
+          - { label: "Job Title", name: "title", widget: "string" }
+          - { label: "Institution", name: "institution", widget: "string" }
+          - { label: "Short Bio", name: "bio", widget: "text" }
+          - { label: "Profile Photo", name: "photo", widget: "image", required: false }
+      - label: "About"
+        name: "about"
+        file: "src/content/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "src/content/contact.md"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+          - { label: "Google Scholar URL", name: "scholar", widget: "string", required: false }
+          - { label: "Message", name: "message", widget: "text" }
