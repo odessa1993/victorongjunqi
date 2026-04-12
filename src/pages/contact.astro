@@ -5,26 +5,27 @@ import Layout from '../components/Layout.astro';
   <main>
 
     <!-- NAV -->
-    <nav style="background:#1a3a5c;padding:0 32px;display:flex;gap:0">
-      <a href="/" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">Home</a>
-      <a href="/about" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">About</a>
-      <a href="/blog" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none">Blog</a>
-      <a href="/contact" style="padding:14px 16px;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid #e8a020">Contact</a>
+    <nav style="background:#143A40;padding:0 32px;display:flex;gap:0">
+      <a href="/" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">Home</a>
+      <a href="/about" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">About</a>
+      <a href="/blog" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">Blog</a>
+      <a href="/contact" style="padding:14px 16px;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid #F2AA1B;font-family:'Lato',sans-serif">Contact</a>
     </nav>
 
     <!-- HEADER -->
-    <header style="background:#1a3a5c;padding:20px 32px;border-bottom:3px solid #e8a020;display:flex;align-items:center;gap:16px">
-<img src="/profile.jpg" alt="Victor Ong Jun Qi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #e8a020" />      <div>
-        <div style="color:#fff;font-size:18px;font-weight:500">Victor Ong Jun Qi</div>
-        <div style="color:rgba(255,255,255,0.65);font-size:12px">ICT Associate · Ministry of Education / Peicai Secondary School</div>
+    <header style="background:#143A40;padding:20px 32px;border-bottom:3px solid #F2AA1B;display:flex;align-items:center;gap:16px">
+      <img src="/profile.jpg" alt="Victor Ong Jun Qi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #F2AA1B" />
+      <div>
+        <div style="color:#fff;font-size:18px;font-weight:700;font-family:'Lato',sans-serif">Victor Ong Jun Qi</div>
+        <div style="color:rgba(255,255,255,0.65);font-size:12px;font-family:'Lato',sans-serif">ICT Associate · Ministry of Education / Peicai Secondary School</div>
       </div>
     </header>
 
     <!-- PAGE TITLE -->
     <section style="background:#f0f4f8;padding:32px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
-      <div style="font-size:11px;font-weight:500;color:#1a3a5c;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Get in touch</div>
-      <h1 style="font-size:28px;font-weight:500;color:#1a3a5c;margin:0">Contact me</h1>
-      <p style="font-size:14px;color:#4a6a8a;margin:6px 0 0">Open to collaborations, speaking invitations, and professional enquiries</p>
+      <div style="font-size:11px;font-weight:700;color:#143A40;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;font-family:'Lato',sans-serif">Get in touch</div>
+      <h1 style="font-size:28px;font-weight:700;color:#143A40;margin:0;font-family:'Lato',sans-serif">Contact me</h1>
+      <p style="font-size:14px;color:#4a6a8a;margin:6px 0 0;font-family:'Lato',sans-serif">Open to collaborations, speaking invitations, and professional enquiries</p>
     </section>
 
     <!-- CONTACT CONTENT -->
@@ -33,27 +34,27 @@ import Layout from '../components/Layout.astro';
       <!-- LEFT — CONTACT FORM -->
       <div>
         <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:24px">
-          <h2 style="font-size:15px;font-weight:500;color:#1a3a5c;margin:0 0 6px">Send me a message</h2>
-          <p style="font-size:13px;color:#888;margin:0 0 20px;line-height:1.6">Fill in the form below and I will get back to you within 2–3 working days.</p>
+          <h2 style="font-size:15px;font-weight:700;color:#143A40;margin:0 0 6px;font-family:'Lato',sans-serif">Send me a message</h2>
+          <p style="font-size:13px;color:#888;margin:0 0 20px;line-height:1.6;font-family:'Lato',sans-serif">Fill in the form below and I will get back to you within 2–3 working days.</p>
 
           <form action="https://formspree.io/f/xrerzbkq" method="POST">
 
             <div style="margin-bottom:16px">
-              <label style="display:block;font-size:12px;font-weight:500;color:#444;margin-bottom:6px">Your name</label>
+              <label style="display:block;font-size:12px;font-weight:700;color:#444;margin-bottom:6px;font-family:'Lato',sans-serif">Your name</label>
               <input type="text" name="name" required placeholder="e.g. Jane Tan"
-                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box" />
+                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box;font-family:'Lato',sans-serif" />
             </div>
 
             <div style="margin-bottom:16px">
-              <label style="display:block;font-size:12px;font-weight:500;color:#444;margin-bottom:6px">Your email</label>
+              <label style="display:block;font-size:12px;font-weight:700;color:#444;margin-bottom:6px;font-family:'Lato',sans-serif">Your email</label>
               <input type="email" name="email" required placeholder="e.g. jane@example.com"
-                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box" />
+                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box;font-family:'Lato',sans-serif" />
             </div>
 
             <div style="margin-bottom:16px">
-              <label style="display:block;font-size:12px;font-weight:500;color:#444;margin-bottom:6px">Subject</label>
+              <label style="display:block;font-size:12px;font-weight:700;color:#444;margin-bottom:6px;font-family:'Lato',sans-serif">Subject</label>
               <select name="subject"
-                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box;background:#fff">
+                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box;background:#fff;font-family:'Lato',sans-serif">
                 <option value="">Select a topic</option>
                 <option value="Research collaboration">Research collaboration</option>
                 <option value="Speaking invitation">Speaking invitation</option>
@@ -64,13 +65,13 @@ import Layout from '../components/Layout.astro';
             </div>
 
             <div style="margin-bottom:20px">
-              <label style="display:block;font-size:12px;font-weight:500;color:#444;margin-bottom:6px">Message</label>
+              <label style="display:block;font-size:12px;font-weight:700;color:#444;margin-bottom:6px;font-family:'Lato',sans-serif">Message</label>
               <textarea name="message" required rows="5" placeholder="Tell me about your enquiry..."
-                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box;resize:vertical;font-family:inherit"></textarea>
+                style="width:100%;padding:10px 14px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;font-size:14px;color:#333;outline:none;box-sizing:border-box;resize:vertical;font-family:'Lato',sans-serif"></textarea>
             </div>
 
             <button type="submit"
-              style="background:#1a3a5c;color:#fff;padding:11px 24px;border-radius:8px;font-size:14px;font-weight:500;border:none;cursor:pointer;width:100%">
+              style="background:#143A40;color:#fff;padding:11px 24px;border-radius:8px;font-size:14px;font-weight:700;border:none;cursor:pointer;width:100%;font-family:'Lato',sans-serif">
               Send message
             </button>
           </form>
@@ -83,60 +84,60 @@ import Layout from '../components/Layout.astro';
         <!-- LINKEDIN -->
         <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:20px;margin-bottom:12px;display:flex;align-items:center;gap:16px">
           <div style="width:40px;height:40px;border-radius:8px;background:#e6f1fb;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0c447c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#143A40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </div>
           <div style="flex:1">
-            <div style="font-size:11px;color:#888;margin-bottom:2px">LinkedIn</div>
-            <a href="https://www.linkedin.com/in/victorong" target="_blank" style="font-size:14px;font-weight:500;color:#1a3a5c;text-decoration:none">linkedin.com/in/victorong</a>
+            <div style="font-size:11px;color:#888;margin-bottom:2px;font-family:'Lato',sans-serif">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/victorong" target="_blank" style="font-size:14px;font-weight:700;color:#143A40;text-decoration:none;font-family:'Lato',sans-serif">linkedin.com/in/victorong</a>
           </div>
         </div>
 
         <!-- SKILLSFUTURE -->
         <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:20px;margin-bottom:12px;display:flex;align-items:center;gap:16px">
           <div style="width:40px;height:40px;border-radius:8px;background:#e1f5ee;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#143A40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
           <div style="flex:1">
-            <div style="font-size:11px;color:#888;margin-bottom:2px">SkillsFuture Profile</div>
-            <a href="https://www.myskillsfuture.gov.sg/csp/public/profile/vb5cf9tz3ff4ef" target="_blank" style="font-size:14px;font-weight:500;color:#1a3a5c;text-decoration:none">View my SkillsFuture profile</a>
+            <div style="font-size:11px;color:#888;margin-bottom:2px;font-family:'Lato',sans-serif">SkillsFuture Profile</div>
+            <a href="https://www.myskillsfuture.gov.sg/csp/public/profile/vb5cf9tz3ff4ef" target="_blank" style="font-size:14px;font-weight:700;color:#143A40;text-decoration:none;font-family:'Lato',sans-serif">View my SkillsFuture profile</a>
           </div>
         </div>
 
         <!-- AVAILABILITY -->
-        <div style="background:#1a3a5c;border-radius:12px;padding:24px;margin-bottom:12px">
-          <div style="font-size:13px;font-weight:500;color:#fff;margin-bottom:16px">Current availability</div>
+        <div style="background:#143A40;border-radius:12px;padding:24px;margin-bottom:12px">
+          <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;font-family:'Lato',sans-serif">Current availability</div>
           <div style="display:flex;flex-direction:column;gap:10px">
             <div style="display:flex;align-items:center;gap:10px">
               <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;flex-shrink:0"></div>
-              <div style="font-size:13px;color:rgba(255,255,255,0.85)">Open to collaborations</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.85);font-family:'Lato',sans-serif">Open to collaborations</div>
             </div>
             <div style="display:flex;align-items:center;gap:10px">
               <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;flex-shrink:0"></div>
-              <div style="font-size:13px;color:rgba(255,255,255,0.85)">Available for speaking invitations</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.85);font-family:'Lato',sans-serif">Available for speaking invitations</div>
             </div>
             <div style="display:flex;align-items:center;gap:10px">
               <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;flex-shrink:0"></div>
-              <div style="font-size:13px;color:rgba(255,255,255,0.85)">Open to professional enquiries</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.85);font-family:'Lato',sans-serif">Open to professional enquiries</div>
             </div>
           </div>
         </div>
 
         <!-- RESPONSE TIME -->
         <div style="background:#f0f4f8;border-radius:12px;padding:20px">
-          <div style="font-size:13px;font-weight:500;color:#1a3a5c;margin-bottom:6px">Response time</div>
-          <div style="font-size:13px;color:#444;line-height:1.6">I typically respond within 2–3 working days.</div>
+          <div style="font-size:13px;font-weight:700;color:#143A40;margin-bottom:6px;font-family:'Lato',sans-serif">Response time</div>
+          <div style="font-size:13px;color:#444;line-height:1.6;font-family:'Lato',sans-serif">I typically respond within 2–3 working days.</div>
         </div>
 
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer style="background:#1a3a5c;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;margin-top:24px">
-      <div style="font-size:11px;color:rgba(255,255,255,0.5)">© 2026 Victor Ong Jun Qi · ICT Associate · Ministry of Education</div>
+    <footer style="background:#143A40;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;margin-top:24px">
+      <div style="font-size:11px;color:rgba(255,255,255,0.5);font-family:'Lato',sans-serif">© 2026 Victor Ong Jun Qi · ICT Associate · Ministry of Education</div>
       <div style="display:flex;gap:16px">
-        <a href="/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none">Home</a>
-        <a href="/about" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none">About</a>
-        <a href="/admin" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none">CMS</a>
+        <a href="/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;font-family:'Lato',sans-serif">Home</a>
+        <a href="/about" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;font-family:'Lato',sans-serif">About</a>
+        <a href="/admin" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;font-family:'Lato',sans-serif">CMS</a>
       </div>
     </footer>
 
