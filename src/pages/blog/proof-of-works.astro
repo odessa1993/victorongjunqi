@@ -1,1 +1,91 @@
+---
+import Layout from '../../components/Layout.astro';
+---
+<Layout title="Proof of works">
+  <main>
 
+    <!-- NAV -->
+    <nav style="background:#143A40;padding:0 32px;display:flex;gap:0">
+      <a href="/" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">Home</a>
+      <a href="/about" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">About</a>
+      <a href="/blog" style="padding:14px 16px;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid #F2AA1B;font-family:'Lato',sans-serif">Blog</a>
+      <a href="/contact" style="padding:14px 16px;font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;font-family:'Lato',sans-serif">Contact</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header style="background:#143A40;padding:20px 32px;border-bottom:3px solid #F2AA1B;display:flex;align-items:center;gap:16px">
+      <img src="/profile.jpg" alt="Victor Ong Jun Qi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #F2AA1B" />
+      <div>
+        <div style="color:#fff;font-size:18px;font-weight:700;font-family:'Lato',sans-serif">Mr. Victor Ong</div>
+        <div style="color:rgba(255,255,255,0.65);font-size:12px;font-family:'Lato',sans-serif">Jun Qi</div>
+      </div>
+    </header>
+
+    <!-- ARTICLE -->
+    <article style="max-width:720px;margin:0 auto;padding:48px 32px">
+
+      <!-- BACK LINK -->
+      <a href="/blog" style="font-size:13px;color:#143A40;text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:32px;font-family:'Lato',sans-serif">
+        ← Back to Blog
+      </a>
+
+      <!-- META -->
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:16px">
+        <span style="font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;background:#faeeda;color:#633806;font-family:'Lato',sans-serif">Proof of works</span>
+        <span style="font-size:11px;color:#888;font-family:'Lato',sans-serif">April 2026 · 1 min read</span>
+      </div>
+
+      <!-- TITLE -->
+      <h1 style="font-size:28px;font-weight:700;color:#143A40;line-height:1.3;margin:0 0 12px;font-family:'Lato',sans-serif">Proof of works</h1>
+
+      <!-- AUTHOR -->
+      <div style="display:flex;align-items:center;gap:10px;padding:16px 0;border-top:0.5px solid rgba(0,0,0,0.08);border-bottom:0.5px solid rgba(0,0,0,0.08);margin-bottom:32px">
+        <img src="/profile.jpg" alt="Victor Ong Jun Qi" style="width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #F2AA1B" />
+        <div>
+          <div style="font-size:13px;font-weight:700;color:#143A40;font-family:'Lato',sans-serif">Victor Ong</div>
+          <div style="font-size:11px;color:#888;font-family:'Lato',sans-serif">14 April 2026</div>
+        </div>
+      </div>
+
+      <!-- BODY -->
+      <div style="font-size:15px;color:#333;line-height:1.9;font-family:'Lato',sans-serif">
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Following links</h2>
+        <p style="margin:0 0 20px">are proof of works I have done in the course of my role as ICT Associate.</p>
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Collaboration with NLB to create digital signage for Peicai Sec</h2>
+        <p style="margin:0 0 20px"><a href="https://sites.google.com/moe.edu.sg/pcss-nlb">Assisted NLB and Peicai Sec to create the UI for students to browse the curated catalogue. UI is based on what is shown on NLB borrowing stations.</a></p>
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Manual HTML coding for Peicai Sec's CCAs page.</h2>
+        <p style="margin:0 0 20px"><a href="https://www.peicaisec.moe.edu.sg/cca/ccas/">Pictures and links are now clickable. WYSIWYG editor in Isomer CMS is basic, hence the need for HTML coding by hands.</a></p>
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Organisation Chart for Peicai Secondary</h2>
+        <p style="margin:0 0 20px"><a href="https://www.peicaisec.moe.edu.sg/our-peicai-family/staff-email-addresses-2025/">School Leaders and ICT KPs assigned me to assist with the organisation chart. I had access to the overall Org Chart in PowerPoint format, arranged by Departments to Rankings. This allows the ease of staff movements management.</a></p>
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Phototaking for Staff</h2>
+        <p style="margin:0 0 20px"><a href="https://www.peicaisec.moe.edu.sg/achievements/staff/">Assisted with the phototaking of individual and group phototaking of staff from 2025 onwards.</a></p>
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Upload writeups of articles to school website</h2>
+        <p style="margin:0 0 20px"><a href="https://www.peicaisec.moe.edu.sg/achievements/students-achievements/">Assisted with helping my committee members responsible for writeups, translating from Document to website formats only for Year 2025.</a></p>
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Academic Subject Overviews</h2>
+        <p style="margin:0 0 20px"><a href="https://www.peicaisec.moe.edu.sg/academic/subject-overviews/">Rearranged each of the subjects by levels, subjects and curriculum. In Peicai, G3 is considered Express, whereas for other schools, it might be G1=Express, depending on School Leaders' decisions.</a></p>
+
+        <h2 style="font-size:18px;font-weight:700;color:#143A40;margin:32px 0 12px;font-family:'Lato',sans-serif">Articles for School Events 2025</h2>
+        <p style="margin:0 0 20px"><a href="https://www.peicaisec.moe.edu.sg/school-events-2025/">Same thing, to assist my committee members responsible for writeups, translating from Document to website formats.</a></p>
+
+
+      </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer style="background:#143A40;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;margin-top:48px">
+      <div style="font-size:11px;color:rgba(255,255,255,0.5);font-family:'Lato',sans-serif">© 2026, Victor Ong<br>Last updated 14 Apr 2026</div>
+      <div style="display:flex;gap:16px">
+        <a href="/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;font-family:'Lato',sans-serif">Home</a>
+        <a href="https://www.peicaisec.moe.edu.sg/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;font-family:'Lato',sans-serif">Peicai Secondary</a>
+      </div>
+    </footer>
+
+  </main>
+</Layout>
